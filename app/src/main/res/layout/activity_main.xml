@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/primary_dark"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FreeKey"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="35sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sao"
+            android:id="@+id/tv_sao"
+            android:paddingTop="20dp"
+            android:paddingLeft="325dp"
+        />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eee"
+        />
+    <RadioGroup
+        android:id="@+id/or_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_mykey"
+            android:drawableTop="@drawable/mykey"
+            style="@style/Buttonstyle"
+            android:text="我的钥匙" />
+
+        <RadioButton
+            android:id="@+id/rb_key"
+            android:drawableTop="@drawable/key"
+            style="@style/Buttonstyle"
+            android:text="通行证" />
+
+        <RadioButton
+            android:id="@+id/rb_customer"
+            style="@style/Buttonstyle"
+            android:drawableTop="@drawable/others"
+            android:paddingTop="10dp"
+            android:text="我的访客" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/Buttonstyle"
+            android:drawableTop="@drawable/login"
+            android:text="用户" />
+
+        <RadioButton
+            android:id="@+id/rb_contact"
+            android:drawableTop="@drawable/contact"
+            style="@style/Buttonstyle"
+            android:text="联系我们" />
+
+    </RadioGroup>
+
+</LinearLayout>

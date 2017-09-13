@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="true">
+
+
+
+
+    <!--framelayout帧布局-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--线性布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <com.zjnu.thinkpad.comapp.view.ScrollViewContainer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="30sp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/key_name"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:id="@+id/my_key"
+                    android:layout_width="300dp"
+                    android:background="#eee"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center_horizontal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#fff"
+                    ></View>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+       >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="门栋信息"
+                        android:textColor="#3c3d40"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#56e6eb" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#56e6eb" />
+                    </LinearLayout>
+
+
+               <!-- <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon"
+                    fab:fab_colorNormal="@color/colorAccent"
+                    fab:fab_colorPressed="@color/primary"
+                    fab:fab_colorRipple="@color/colorPrimary"/>-->
+
+
+                    <com.github.clans.fab.FloatingActionMenu
+                        android:id="@+id/menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        fab:menu_colorNormal="@color/accent"
+                        fab:menu_colorPressed="@color/primary"
+                        >
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/menu_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon"
+                            fab:fab_size="mini"
+                            fab:fab_colorRipple="@color/primary_dark"
+                            fab:fab_colorNormal="@color/primary"
+                            fab:fab_label="增加" />
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/menu_del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon"
+                            fab:fab_size="mini"
+                            fab:fab_colorRipple="@color/primary_dark"
+                            fab:fab_colorNormal="@color/primary"
+                            fab:fab_label="删除" />
+
+
+
+                    </com.github.clans.fab.FloatingActionMenu>
+                    </RelativeLayout>
+
+        </ScrollView>
+
+    </com.zjnu.thinkpad.comapp.view.ScrollViewContainer>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
