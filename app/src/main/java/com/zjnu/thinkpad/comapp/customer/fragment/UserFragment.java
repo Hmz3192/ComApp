@@ -13,6 +13,6 @@ public class UserFragment extends BaseFragment {
     @Override
     public View initView() {
         View view = View.inflate(mcontext, R.layout.fragment_user, null);
-        return view;b
+        return view;
     }
 }
